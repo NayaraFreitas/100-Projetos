@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2NYTech</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+        <section class="container">
+            
+            <div class="container-information information">
+                <h1>NYTECH</h1>
+                <p>
+                    The world more tech possible!
+                </p>
+            </div>
+
+            <div class="form">
+
+                <h2>Login</h2>
+                <form action="/" autocomplete="on">
+                    <label for="iusu">Username: </label><br>
+                    <input type="text" id="iusu" placeholder="name1234" required> <br>
+
+                    <label for="ipass">Password: </label> <br>
+                    <input type="password" name="password" id="ipass" placeholder="*******" required> <br>
+
+                    <button id="login">Login</button>
+
+                </form>
+
+                <div class="after-login">
+                    <a href="#">Esqueceu a Senha?</a>
+                    <span>OU</span>
+                    <a href="#">Cadastre-se</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    <script>
+        function stopAction(e){
+            e.preventDefault();
+        }
+        document.getElementById('login').addEventListener('click', stopAction, false);
+    </script>
+</body>
+</html>
